@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Visa Services And Travel Assistance | NP Tour And Travel</title>
+<meta name="description" content="Get hassle-free visa services and expert travel assistance with NP Tour And Travel. Plan your perfect journey today.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  :root {
+    --bg-gradient: linear-gradient(135deg, #98baca, #d78eac);
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --border: rgba(255, 255, 255, 0.4);
+    --brand: #2563eb;
+    --brand-hover: #1e40af;
+    --text: #1f2937;
+    --muted: #6b7280;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    text-align: center;
+    padding: 50px 20px 30px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    color: var(--brand);
+    margin-bottom: 10px;
+  }
+
+  header p {
+    color: var(--muted);
+    font-size: 1rem;
+  }
+
+  .services-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .service-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    padding: 25px 20px;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+ 
+
+  .service-card:nth-child(1){ animation-delay: 0.1s; }
+  .service-card:nth-child(2){ animation-delay: 0.2s; }
+  .service-card:nth-child(3){ animation-delay: 0.3s; }
+  .service-card:nth-child(4){ animation-delay: 0.4s; }
+  .service-card:nth-child(5){ animation-delay: 0.5s; }
+  .service-card:nth-child(6){ animation-delay: 0.6s; }
+  .service-card:nth-child(7){ animation-delay: 0.7s; }
+  .service-card:nth-child(8){ animation-delay: 0.8s; }
+  .service-card:nth-child(9){ animation-delay: 0.9s; }
+
+  .service-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 14px 28px rgba(37,99,235,0.15);
+    background: rgba(255, 255, 255, 0.85);
+  }
+ 
+  .service-card i {
+    font-size: 42px;
+    color: var(--brand);
+    margin-bottom: 15px;
+    background: rgba(37, 99, 235, 0.08);
+    padding: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: transform 0.4s ease;
+  }
+
+  .service-card:hover i {
+    transform: rotate(360deg);
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .service-card a{ text-decoration: none; color: black;}
+
+  .service-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  
+  @media (max-width: 1024px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .service-card i {
+      font-size: 38px;
+      padding: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 30px 15px;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    header p {
+      font-size: 0.95rem;
+    }
+    .service-card {
+      padding: 20px 15px;
+    }
+    .service-card h3 {
+      font-size: 1.1rem;
+    }
+    .service-card p {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .services-container {
+      grid-template-columns: 1fr;
+    }
+    .service-card {
+      padding: 18px;
+    }
+    .service-card i {
+      font-size: 34px;
+      padding: 14px;
+    }
+  }
+
+
+
+
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <h1>Our Services</h1>
+  <p>Your complete travel partner with NP Tour And Travel</p>
+</header>
+
+<section class="services-container">
+  <div class="service-card">
+    <a href="visa.html">
+      <i class="fas fa-passport"></i>
+    <h3>Visa Services</h3>
+  </a>
+    <p>Fast and secure visa assistance for multiple destinations worldwide.</p>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-plane-departure"></i>
+    <h3>Ok To Board</h3>
+    <p>Get your Ok To Board approval quickly for smooth travel.</p>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-ticket-alt"></i>
+    <h3>Flight Tickets</h3>
+    <p>Book affordable flight tickets with instant confirmation.</p>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-file-invoice"></i>
+    <h3>Return Dummy Ticket</h3>
+    <p>Get authentic dummy return tickets for your visa process.</p>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-suitcase-rolling"></i>
+    <h3>Tour Packages</h3>
+    <p>Exclusive and customizable tour packages for every destination.</p>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-car"></i>
+    <h3>Car Service</h3>
+    <p>Luxury and budget-friendly car rental options for every trip.</p>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-bus"></i>
+    <h3>Bus Service</h3>
+    <p>Reliable and comfortable bus services at great prices.</p>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-file-signature"></i>
+    <h3>Immigration Clearance (P.O.E)</h3>
+    <p>Complete assistance for POE clearance and documentation.</p>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-id-card"></i>
+    <h3>Passport Services</h3>
+    <p>Quick passport application, renewal, and corrections with ease.</p>
+  </div><br>
+</section>
+
+
+
+<footer style="background:#333; color:#fff; width: 100%; font-family:Arial, sans-serif;">
+  <div style="display:flex; justify-content:space-between; flex-wrap:wrap; border-bottom:1px solid #444; padding-bottom:20px;">
+    
+ 
+    <div style="max-width:300px; padding: 30px 40px;">
+      <h3 style="color:#ffb400;">NP Tour and Travel</h3><br>
+      <p style="color:#ccc; line-height:1.5;">
+        N.P. Travel & Tours - Where every journey begins and trusts. Our services are designed to make your journey simple, safe and enjoyable. Be it a scale plan, big trip or special package, we make your every journey special.
+      </p>
+    </div>
+    <div style="padding: 30px 40px;">
+      <h3 style="color:#ffb400;">Quick Links</h3>
+      <ul style="list-style:none; padding:0; margin:10px 0;">
+        <li><a href="index.html" style="color:#ccc; text-decoration:none;">Home</a></li><br>
+        <li><a href="about.html" style="color:#ccc; text-decoration:none;">About</a></li><br>
+        <li><a href="service.html" style="color:#ccc; text-decoration:none;">Services</a></li><br>
+        <li><a href="gallery.html" style="color:#ccc; text-decoration:none;">Gallery</a></li><br>
+        <li><a href="Contract.html" style="color:#ccc; text-decoration:none;">Contact</a></li><br>
+      </ul>
+    </div>
+
+
+    <div style="padding: 30px 40px;">
+      <h3 style="color:#ffb400;">Contact Us</h3><br>
+      <p style="color:#ccc; margin:5px 0;">
+        📞 +91-9927432236 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07457832830
+      </p><br>
+      <p style="color:#ccc; margin:5px 0;">
+        📧 visa.nptourandtravel99@gmail.com
+      </p><br>
+      <p style="color:#ccc; margin:5px 0;">
+        📍 Address: H No. 1758, 4/C, Shatabdi Nagar Partapur, Meerut – 250103, U.P, India
+      </p>
+    </div>
+  </div>
+
+
+
+  <p style="text-align:center; color:#ccc; margin-top:10px;">
+    © 2025 NP Tour and Travel. All rights reserved.
+  </p><br>
+</footer>
+<script>
+
+  document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+    });
+    
+  </script>
+</body>
+</html>

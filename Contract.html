@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact NP Tour And Travel | Book Your Trip Now</title>
+<meta name="description" content="Get in touch with NP Tour And Travel for bookings, inquiries, and travel assistance. We're here to help you travel smart.">
+  <style>
+    :root{
+      --bg:#354855;--card:#121b2e;--muted:#94a3b8;--brand:#40d9ff;--brand2:#7c4dff;--text:#e6eef8;
+      --ring:0 0 0 10px color-mix(in oklab, var(--brand) 18%, transparent);
+    }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;background:radial-gradient(1200px 800px at 85% -10%,#10203c 0%,transparent 60%),radial-gradient(900px 700px at -10% 120%,#1a1f3a 0%,transparent 60%),var(--bg);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    nav {
+     
+      text-align:center;
+      margin-bottom:30px;
+      border-bottom:1px solid #e6eef8;
+      color: skyblue;
+    }
+
+    .hero{max-width:1100px;margin:40px auto 22px;padding:0 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center}
+    .hero h1{font-size:clamp(28px,3.6vw,44px);margin:0 0 10px}
+    .hero p{color:var(--muted);margin:0}
+    .hero-card{border:1px solid #1f2a44;background:linear-gradient(180deg,#111a2f, #0f1630);padding:18px;border-radius:18px;box-shadow:0 10px 30px #0006}
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid #233157;border-radius:999px;padding:6px 10px;font-size:12px;color:#b6c8e6}
+
+    .wrap{max-width:1100px;margin:10px auto;padding:0 20px 60px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .card{background:linear-gradient(180deg,#0f1730,#121b2e);border:1px solid #203055;border-radius:18px;padding:18px;box-shadow:0 10px 25px #0007}
+
+    form{display:grid;gap:12px}
+    label{font-size:13px;color:#c7d7f6}
+    input,textarea,select{width:100%;padding:12px 12px;border-radius:12px;background:#0b142b;border:1px solid #223256;color:var(--text);outline:none;transition:.2s}
+    input:focus,textarea:focus,select:focus{box-shadow:var(--ring);border-color:var(--brand)}
+    textarea{min-height:120px;resize:vertical}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;border:1px solid #2a3a62;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#08111f;font-weight:700;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px); background: #cb608e; }
+
+    .info{display:grid;gap:14px}
+    .info-item{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px dashed #29406a;border-radius:14px;background:#0b142b}
+    
+    .map{border-radius:18px;overflow:hidden;border:1px solid #23385f}
+
+    footer{border-top:1px solid #202a44;color:#99a7c2}
+    .foot{max-width:1100px;margin:auto;padding:24px 20px;display:flex;justify-content:space-between;gap:14px;font-size:14px}
+
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.hero-card{order:-1}}
+    @media (max-width:550px) { .hero-card,.badge { display: none;}  .grid { display: flex;flex-direction: column;}
+    .grid .card:nth-child(1) { order: 2; }  .grid .info { order: 1; } }
+
+ </style>
+</head>
+<body>
+ 
+  <nav><h1>NP Tour And Travel</h1></nav>
+
+  <section class="hero">
+    <div>
+      <span class="badge">✈️ 24×7 Support • Quick Visa & Tours</span>
+      <h1>We’re here to help you plan the perfect trip</h1>
+      <p>Questions about Dubai visas, flight tickets, hotel bookings or custom tours? Send us a message — our team replies fast.</p>
+    </div>
+    <div class="hero-card">
+      <strong>Why contact us?</strong>
+      <ul style="margin:10px 0 0 18px;color:#afc3e7;line-height:1.6">
+        <li>Same‑day response on working hours</li>
+        <li>Personalised itinerary suggestions</li>
+        <li>Transparent pricing & clear documentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <main class="wrap" id="contact">
+    <div class="grid">
+      <div class="card">
+        <h2 style="margin:0 0 8px">Send us a message</h2>
+        <p style="margin:0 0 16px;color:var(--muted)">Fill the form and we’ll get back within a few hours.</p>
+        <form action="https://formspree.io/f/mblkneyd" method="POST" data-netlify="true" name="contact" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <div style="display:none"><label>Don’t fill this: <input name="bot-field" /></label></div>
+          <div class="row">
+            <div><label>Full Name</label><input name="name" placeholder="Full Name" required/></div>
+            <div><label>Phone</label><input name="phone" placeholder="+91" /></div>
+          </div>
+          <div class="row">
+            <div><label>Email</label><input type="email" name="email" placeholder="you@email.com"/></div>
+            <div>
+              <label>Service</label>
+              <select name="service">
+                <option>Choose</option>
+                <option>Flight Tickets</option>
+                <option>Visa</option>
+                <option>Holiday Package</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label>Your Message</label>
+            <textarea name="message" placeholder="Type your message..." ></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message →</button>
+        </form>
+      </div>
+
+    
+      <aside class="card info">
+        <h2 style="margin:0">Contact details</h2>
+        <div class="info-item">
+          <span class="icon">📍</span>
+          <div>
+            <strong>Office</strong>
+            <div class="muted">1758, 4/C Shatabdi Nagar Partapur Meerut  Near by Madhav Kunj -250103 UP, India</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="icon">📞</span>
+          <div>
+            <strong>Call</strong>
+            <div class="muted"><a href="tel:+919927432236">+91 9927432236</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <div class="muted"><a href="mailto:nptourandtravel99@gmail.com">nptourandtravel99@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="icon">⏰</span>
+          <div>
+            <strong>Hours</strong>
+            <div class="muted">Mon–Sat: 10:00–19:00 IST</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section id="map" class="card" style="margin-top:20px">
+      <h2 style="margin:0 0 10px">Find us on the map</h2>
+      <div class="map">
+        <iframe title="Map" src="https://www.google.com/maps?q=28°54'45.4,77°39'41.8&z=11&output=embed&hl=hi&region=IN&maptype=satellite" width="100%" height="320" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+
+  <footer style="background:#333; color:#fff; padding:20px 50px; font-family:Arial, sans-serif;">
+    <div style="display:flex; justify-content:space-between; flex-wrap:wrap; border-bottom:1px solid #444; padding-bottom:20px;">
+      
+      <!-- Left Section -->
+      <div style="max-width:300px;">
+        <h3 style="color:#ffb400;">NP Tour and Travel</h3>
+        <p style="color:#ccc; line-height:1.5;">
+          N.P. Travel & Tours - Where every journey begins and trusts. Our services are designed to make your journey simple, safe and enjoyable. Be it a scale plan, big trip or special package, we make your every journey special.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h3 style="color:#ffb400;">Quick Links</h3>
+        <ul style="list-style:none; padding:0; margin:10px 0;">
+          <li><a href="index.html" style="color:#ccc; text-decoration:none;">Home</a></li><br>
+          <li><a href="about.html" style="color:#ccc; text-decoration:none;">About</a></li><br>
+          <li><a href="service.html" style="color:#ccc; text-decoration:none;">Services</a></li><br>
+          <li><a href="gallery.html" style="color:#ccc; text-decoration:none;">Gallery</a></li><br>
+          <li><a href="Contract.html" style="color:#ccc; text-decoration:none;">Contact</a></li><br>
+        </ul>
+      </div>
+  
+      <!-- Contact Section -->
+      <div>
+        <h3 style="color:#ffb400;">Contact Us</h3>
+        <p style="color:#ccc; margin:5px 0;">
+          📞 +91-9927432236 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07457832830
+        </p><br>
+        <p style="color:#ccc; margin:5px 0;">
+          📧 visa.nptourandtravel99@gmail.com
+        </p><br>
+        <p style="color:#ccc; margin:5px 0;">
+          📍 Address: H No. 1758, 4/C, Shatabdi Nagar Partapur, Meerut – 250103, U.P, India
+        </p>
+      </div>
+    </div>
+  
+  
+    <!-- Copyright -->
+    <p style="text-align:center; color:#ccc; margin-top:10px;">
+      © 2025 NP Tour and Travel. All rights reserved.
+    </p>
+  </footer>
+  
+  
+  <script>
+    const form = document.querySelector('form');
+  
+    form.addEventListener('submit', function (e) {
+      
+      setTimeout(() => {
+        form.reset();
+      }, 100); 
+    });
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
+
+  </script>
+</body>
+</html> 

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visa Services | NP Tour And Travel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      background: #cbeced;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .search-box {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .search-box input {
+      width: 80%;
+      max-width: 400px;
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 2px solid #00c6ff;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      position: relative;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+      background: #f8f8f8;
+      padding: 10px;
+    }
+
+    .card h3 {
+      padding: 10px;
+      font-size: 18px;
+      background: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.4rem;
+      }
+      .card h3 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Visa Services - NP Tour And Travel</header>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search Country...">
+  </div>
+
+  <div class="grid" id="countryGrid">
+    <!-- Cards will be added by JS -->
+  </div>
+  <footer style="background:#333; color:#fff; padding:20px 50px; font-family:Arial, sans-serif;">
+    <div style="display:flex; justify-content:space-between; flex-wrap:wrap; border-bottom:1px solid #444; padding-bottom:20px;">
+      
+      <!-- Left Section -->
+      <div style="max-width:300px;">
+        <h3 style="color:#ffb400;">NP Tour and Travel</h3>
+        <p style="color:#ccc; line-height:1.5;">
+          N.P. Travel & Tours - Where every journey begins and trusts. Our services are designed to make your journey simple, safe and enjoyable. Be it a scale plan, big trip or special package, we make your every journey special.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h3 style="color:#ffb400;">Quick Links</h3>
+        <ul style="list-style:none; padding:0; margin:10px 0;">
+          <li><a href="index.html" style="color:#ccc; text-decoration:none;">Home</a></li><br>
+          <li><a href="about.html" style="color:#ccc; text-decoration:none;">About</a></li><br>
+          <li><a href="service.html" style="color:#ccc; text-decoration:none;">Services</a></li><br>
+          <li><a href="gallery.html" style="color:#ccc; text-decoration:none;">Gallery</a></li><br>
+          <li><a href="Contract.html" style="color:#ccc; text-decoration:none;">Contact</a></li><br>
+        </ul>
+      </div>
+  
+      <!-- Contact Section -->
+      <div>
+        <h3 style="color:#ffb400;">Contact Us</h3>
+        <p style="color:#ccc; margin:5px 0;">
+          📞 +91-9927432236 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07457832830
+        </p><br>
+        <p style="color:#ccc; margin:5px 0;">
+          📧 visa.nptourandtravel99@gmail.com
+        </p><br>
+        <p style="color:#ccc; margin:5px 0;">
+          📍 Address: H No. 1758, 4/C, Shatabdi Nagar Partapur, Meerut – 250103, U.P, India
+        </p>
+      </div>
+    </div>
+  
+  
+    <!-- Copyright -->
+    <p style="text-align:center; color:#ccc; margin-top:10px;">
+      © 2025 NP Tour and Travel. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    const countries = [
+      { name: "Malaysia", code: "my" },
+      { name: "Hong Kong", code: "hk" },
+      { name: "Jeju Island", code: "kr" },
+      { name: "Philippines", code: "ph" },
+      { name: "Thailand", code: "th" },
+      { name: "Qatar", code: "qa" },
+      { name: "Uzbekistan", code: "uz" },
+      { name: "Azerbaijan", code: "az" },
+      { name: "Bahrain", code: "bh" },
+      { name: "Russia", code: "ru" },
+      { name: "Indonesia", code: "id" },
+      { name: "Vietnam", code: "vn" },
+      { name: "Sri Lanka", code: "lk" },
+      { name: "Cambodia", code: "kh" },
+      { name: "Jordan", code: "jo" },
+      { name: "Kazakhstan", code: "kz" },
+      { name: "Ethiopia", code: "et" },
+      { name: "Tanzania", code: "tz" },
+      { name: "Myanmar", code: "mm" },
+      { name: "Georgia", code: "ge" },
+      { name: "Iran", code: "ir" },
+      { name: "Oman", code: "om" },
+      { name: "Israel", code: "il" },
+      { name: "Iraq", code: "iq" },
+      { name: "Bhutan", code: "bt" },
+      { name: "Mongolia", code: "mn" },
+      { name: "Armenia", code: "am" },
+      { name: "Kyrgyzstan", code: "kg" },
+      { name: "China", code: "cn" },
+      { name: "Bangladesh", code: "bd" },
+      { name: "UAE", code: "ae" },
+      { name: "Saudi Arabia", code: "sa" },
+      { name: "Kuwait", code: "kw" },
+      { name: "Kenya", code: "ke" },
+      { name: "Zambia", code: "zm" },
+      { name: "Morocco", code: "ma" },
+      { name: "Cameroon", code: "cm" },
+      { name: "South Africa", code: "za" },
+      { name: "Algeria", code: "dz" },
+      { name: "Djibouti", code: "dj" },
+      { name: "Zimbabwe", code: "zw" },
+      { name: "Uganda", code: "ug" },
+      { name: "Romania", code: "ro" },
+      { name: "Serbia", code: "rs" },
+      { name: "Malta", code: "mt" },
+      { name: "Albania", code: "al" },
+      { name: "Schengen Visa", code: "eu" },
+      { name: "Australia", code: "au" },
+      { name: "USA", code: "us" },
+      { name: "UK", code: "gb" },
+      { name: "Turkey", code: "tr" },
+      { name: "Umrah Visa", code: "sa" }
+    ];
+
+    const grid = document.getElementById("countryGrid");
+
+    countries.forEach(item => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+      card.innerHTML = `
+        <img src="https://flagcdn.com/w320/${item.code}.png" alt="${item.name}">
+        <h3>${item.name}</h3>
+      `;
+      grid.appendChild(card);
+    });
+
+    // Search filter
+    document.getElementById("search").addEventListener("input", function() {
+      const query = this.value.toLowerCase();
+      document.querySelectorAll(".card").forEach(card => {
+        const name = card.querySelector("h3").innerText.toLowerCase();
+        card.style.display = name.includes(query) ? "block" : "none";
+      });
+    });
+
+
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+    });
+    
+  </script>
+
+</body>
+</html>

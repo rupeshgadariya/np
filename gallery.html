@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | NP Tour And Travel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #effcfc;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin: 30px 0;
+      color: #222;
+    }
+
+ 
+    #gallery-box {
+      width: 90%;
+      max-width: 1300px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding-bottom: 30px;
+    }
+
+    #gallery-box a img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.4s ease;
+    }
+
+    #gallery-box a img:hover {
+      transform: scale(1.08);
+    }
+
+
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 40px 20px;
+      margin-top: auto;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #444;
+      padding-bottom: 20px;
+    }
+
+    .footer-section {
+      flex: 1;
+      margin: 20px;
+      min-width: 250px;
+    }
+
+    .footer-section h3 {
+      color: #ffb400;
+      margin-bottom: 15px;
+    }
+
+    .footer-section p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      margin: 8px 0;
+    }
+
+    .footer-links ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-links ul li a:hover {
+      color: #ffb400;
+    }
+
+    .footer-social {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .footer-social a {
+      color: #fff;
+      font-size: 22px;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .footer-social a:hover {
+      color: #ffb400;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      color: #ccc;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 6vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Captured Journey: Explore Our Adventures</h1>
+
+ 
+  <div id="gallery-box">
+    <a href="Gallery/10.jpg"><img src="Gallery/10.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/11.jpg"><img src="Gallery/11.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/12.jpg"><img src="Gallery/12.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/13.jpg"><img src="Gallery/13.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/14.jpg"><img src="Gallery/14.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/15.jpg"><img src="Gallery/15.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/16.jpg"><img src="Gallery/16.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/18.jpg"><img src="Gallery/18.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/19.jpg"><img src="Gallery/19.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/20.jpg"><img src="Gallery/20.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/21.jpg"><img src="Gallery/21.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/22.jpg"><img src="Gallery/22.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/24.jpg"><img src="Gallery/24.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/25.jpg"><img src="Gallery/25.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/26.jpg"><img src="Gallery/26.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/27.jpg"><img src="Gallery/27.png" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/28.jpg"><img src="Gallery/28.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/29.jpg"><img src="Gallery/29.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/30.jpg"><img src="Gallery/30.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/32.jpg"><img src="Gallery/32.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/33.jpg"><img src="Gallery/33.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/4.jpg"><img src="Gallery/4.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/6.jpg"><img src="Gallery/6.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+    <a href="Gallery/9.jpg"><img src="Gallery/9.jpg" alt="NP Tour And Travel" loading="lazy"></a>
+  </div>
+
+  
+  <footer>
+    <div class="footer-container">
+     
+      <div class="footer-section">
+        <h3>NP Tour and Travel</h3>
+        <p>
+          N.P. Travel & Tours - Where every journey begins and trusts. Our services are designed to make your journey simple, safe and enjoyable. Be it a scale plan, big trip or special package, we make your every journey special.
+        </p>
+      </div>
+
+     
+      <div class="footer-section footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contract.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>📞 +91-9927432236 | 07457832830</p>
+        <p>📧 visa.nptourandtravel99@gmail.com</p>
+        <p>📍 H No. 1758, 4/C, Shatabdi Nagar Partapur, Meerut – 250103, U.P, India</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 NP Tour and Travel. All rights reserved.
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+    });
+  </script>
+
+</body>
+</html>
